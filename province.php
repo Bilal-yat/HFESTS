@@ -1,6 +1,6 @@
 <?php
 require("mysql_init.php");
-//List all facilities
+//List all facilities by province
 $sql_province = "SELECT a.Province,
 COUNT(DISTINCT f.FacilityID) AS TotalFacilities,
 COUNT(DISTINCT w.EmployeeID) AS TotalEmployees,
