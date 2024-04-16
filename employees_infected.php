@@ -1,6 +1,6 @@
 <?php
 require("mysql_init.php");
-//List all facilities
+//List employees infected with Covid-19
 $sql_employees_infected = "SELECT 
 e.EmployeeRole,
 COUNT(DISTINCT e.EmployeeID) AS TotalEmployees,
