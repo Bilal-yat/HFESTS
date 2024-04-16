@@ -1,6 +1,6 @@
 <?php
 require("mysql_init.php");
-//List all facilities
+//List employees who have never been infected
 $sql_employees_never_infected = "SELECT e.EmployeeRole,
 COUNT(DISTINCT e.EmployeeID) AS TotalEmployees,
 COUNT(DISTINCT CASE WHEN i.InfectionType IS NULL 
