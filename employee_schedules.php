@@ -6,7 +6,7 @@ $eid = $queries["EID"];
 $startDate = date('Y-m-d', strtotime($queries["startdate"]));
 $endDate = date('Y-m-d', strtotime($queries["enddate"]));
 
-//List all employees of given facility
+//List the schedules of a given employee
 $sql_emp_schedules = "SELECT F.FacilityName,
 S.ScheduleStart AS DayOfYear,
 S.StartTime,
