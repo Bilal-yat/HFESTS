@@ -1,6 +1,6 @@
 <?php
 require("mysql_init.php");
-//List all facilities
+//List infected nurses
 $sql_infected_nurses = "SELECT p.FirstName,
 p.LastName,
 e.StartDate AS FirstDayOfWork,
